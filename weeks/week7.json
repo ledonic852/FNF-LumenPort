@@ -1,0 +1,30 @@
+{
+	"songs": [
+		[
+			"Ugh",
+			"tankman",
+			[246, 182, 4]
+		],
+		[
+			"Guns",
+			"tankman",
+			[246, 182, 4]
+		],
+		[
+			"Stress",
+			"tankman",
+			[246, 182, 4]
+		]
+	],
+	"colors": ["F9CF51", "B79839"],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "week7",
+	"difficulties": "Easy,Normal,Hard",
+	"weekCharacters": ["tankman", "bf", "gf"],
+	"storyName": "Tankman ft. JohnnyUtah",
+	"weekName": "Week 7",
+	"hideStoryMode": false,
+	"weekBefore": "week6",
+	"startUnlocked": true
+}
