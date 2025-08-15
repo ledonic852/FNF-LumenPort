@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="speakerPixel_assets.png">
+	<SubTexture name="bumpBox0000" x="0" y="0" width="120" height="60" />
+	<SubTexture name="bumpBox0001" x="0" y="0" width="120" height="60" />
+	<SubTexture name="bumpBox0002" x="0" y="60" width="120" height="60" />
+	<SubTexture name="bumpBox0003" x="0" y="60" width="120" height="60" />
+	<SubTexture name="bumpBox0004" x="0" y="60" width="120" height="60" />
+	<SubTexture name="bumpBox0005" x="0" y="120" width="120" height="60" />
+	<SubTexture name="bumpBox0006" x="0" y="120" width="120" height="60" />
+	<SubTexture name="bumpBox0007" x="0" y="120" width="120" height="60" />
+	<SubTexture name="bumpBox0008" x="0" y="120" width="120" height="60" />
+	<SubTexture name="bumpBox0009" x="0" y="120" width="120" height="60" />
+	<SubTexture name="bumpBox0010" x="0" y="120" width="120" height="60" />
+	<SubTexture name="bumpBox0011" x="0" y="120" width="120" height="60" />
+	<SubTexture name="bumpBox0012" x="0" y="120" width="120" height="60" />
+	<SubTexture name="bumpBox0013" x="0" y="120" width="120" height="60" />
+	<SubTexture name="bumpBox0014" x="0" y="120" width="120" height="60" />
+</TextureAtlas>
