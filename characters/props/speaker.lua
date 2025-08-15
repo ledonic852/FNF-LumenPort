@@ -76,7 +76,9 @@ end
 
 function onBeatHit()
     --[[
-        Ditto, but it works for every beat of the song.
+        Makes the speaker bop at the same time as the character.
+        Ex: If the character only bops their head when the beat is even,
+        then the speaker will also do the same.
     ]]
     if characterType == 'gf' then
         characterSpeed = getProperty('gfSpeed')

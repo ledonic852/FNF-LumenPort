@@ -24,12 +24,12 @@ function createSpeaker(attachedCharacter, offsetX, offsetY)
         characterType = getCharacterType(attachedCharacter)
     end
 
-    makeAnimatedLuaSprite('speaker', 'characters/speaker_assets')
-    addAnimationByPrefix('speaker', 'idle', 'bumpBox', 24, false)
+    makeAnimatedLuaSprite('speakerChristmas', 'characters/speaker_assets')
+    addAnimationByPrefix('speakerChristmas', 'idle', 'bumpBox', 24, false)
     if characterType ~= '' then
-        setObjectOrder('speaker', getObjectOrder(characterType..'Group'))
+        setObjectOrder('speakerChristmas', getObjectOrder(characterType..'Group'))
     end
-    addLuaSprite('speaker')
+    addLuaSprite('speakerChristmas')
 
     makeAnimatedLuaSprite('christmasLights', 'characters/speaker/lights')
     addAnimationByPrefix('christmasLights', 'idle', 'glow', 24, false)
@@ -40,9 +40,9 @@ function createSpeaker(attachedCharacter, offsetX, offsetY)
     
     if characterType ~= '' then
         runHaxeCode([[
-            function shaderCheck(character:String) return getLuaObject('speaker').shader == getAttachedCharacter(character).shader;
+            function shaderCheck(character:String) return getLuaObject('speakerChristmas').shader == getAttachedCharacter(character).shader;
             function applyShader(character:String) {
-                getLuaObject('speaker').shader = getAttachedCharacter(character).shader;
+                getLuaObject('speakerChristmas').shader = getAttachedCharacter(character).shader;
                 getLuaObject('christmasLights').shader = getAttachedCharacter(character).shader;
             }
             
@@ -55,7 +55,7 @@ function createSpeaker(attachedCharacter, offsetX, offsetY)
                     case 'gf':
                         return game.gf;
                     default:
-                        return getLuaObject('speaker');
+                        return getLuaObject('speakerChristmas');
                 }
             }
         ]])
@@ -63,7 +63,7 @@ function createSpeaker(attachedCharacter, offsetX, offsetY)
     
     if characterName ~= '' then
         if _G[characterType..'Name'] ~= characterName then
-            setProperty('speaker.visible', false)
+            setProperty('speakerChristmas.visible', false)
             setProperty('christmasLights.visible', false)
         end
     end
@@ -73,17 +73,17 @@ end
 function onEvent(eventName, value1, value2, strumTime)
     if eventName == 'Change Character' then
         if getCharacterType(value2) == characterType and value2 ~= characterName then
-            setProperty('speaker.visible', false)
+            setProperty('speakerChristmas.visible', false)
             setProperty('christmasLights.visible', false)
         elseif characterName ~= '' then
-            setProperty('speaker.visible', true)
+            setProperty('speakerChristmas.visible', true)
             setProperty('christmasLights.visible', true)
             if characterType == '' then
                 characterType = getCharacterType(characterName)
-                setProperty('speaker.x', getProperty(characterType..'.x') + offsetData[1])
-                setProperty('speaker.y', getProperty(characterType..'.y') + offsetData[2])
-                setProperty('christmasLights.x', getProperty('speaker.x') - 100)
-                setProperty('christmasLights.y', getProperty('speaker.y'))
+                setProperty('speakerChristmas.x', getProperty(characterType..'.x') + offsetData[1])
+                setProperty('speakerChristmas.y', getProperty(characterType..'.y') + offsetData[2])
+                setProperty('christmasLights.x', getProperty('speakerChristmas.x') - 83)
+                setProperty('christmasLights.y', getProperty('speakerChristmas.y') - 40)
             end
         end
     end
@@ -91,7 +91,9 @@ end
 
 function onBeatHit()
     --[[
-        Ditto, but it works for every beat of the song.
+        Makes the speaker bop at the same time as the character.
+        Ex: If the character only bops their head when the beat is even,
+        then the speaker will also do the same.
     ]]
     if characterType == 'gf' then
         characterSpeed = getProperty('gfSpeed')
@@ -104,7 +106,7 @@ function onBeatHit()
         danceEveryNumBeats = 1
     end
     if curBeat % (danceEveryNumBeats * characterSpeed) == 0 then
-        playAnim('speaker', 'idle', true)
+        playAnim('speakerChristmas', 'idle', true)
         playAnim('christmasLights', 'idle', true)
     end
 end
@@ -119,15 +121,15 @@ function onUpdatePost(elapsed)
                 local propertyName = propertyTracker[property][1]
                 local propertyValue = propertyTracker[property][2]
                 if property < 3 then
-                    setProperty('speaker.'..propertyName, propertyValue + offsetData[property])
+                    setProperty('speakerChristmas.'..propertyName, propertyValue + offsetData[property])
                     if propertyName == 'x' then
-                        setProperty('christmasLights.'..propertyName, getProperty('speaker.'..propertyName) - 83)
+                        setProperty('christmasLights.'..propertyName, getProperty('speakerChristmas.'..propertyName) - 83)
                     else
-                        setProperty('christmasLights.'..propertyName, getProperty('speaker.'..propertyName) - 40)
+                        setProperty('christmasLights.'..propertyName, getProperty('speakerChristmas.'..propertyName) - 40)
                     end
                 else
-                    setProperty('speaker.'..propertyName, propertyValue)
-                    setProperty('christmasLights.'..propertyName, getProperty('speaker.'..propertyName))
+                    setProperty('speakerChristmas.'..propertyName, propertyValue)
+                    setProperty('christmasLights.'..propertyName, getProperty('speakerChristmas.'..propertyName))
                 end
             end            
         end
