@@ -4,7 +4,7 @@ function onCreate()
         makeGraphic('blackScreen', screenWidth * 2, screenHeight * 2, '000000')
         setScrollFactor('blackScreen', 0, 0)
         addLuaSprite('blackScreen', true)
-        addLuaScript('custom_events/Set Camera Zoom') -- Doing this, or else I can't use the event.
+        addLuaScript('events/Set Camera Zoom') -- Doing this, or else I can't use the event.
     end
 end
 

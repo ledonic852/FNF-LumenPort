@@ -15,14 +15,7 @@ function onCreate()
 end
 
 function onCreatePost()
-    runHaxeCode([[
-		import flixel.addons.effects.FlxTrail;
-
-		// Adds the trail behind the opponent.
-		var dadTrail:FlxTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069);
-		game.addBehindDad(dadTrail);
-	]])
-
+    trailSetup()
     if shadersEnabled == true and lowQuality == false then
         initLuaShader('wiggle')
         wiggleData = {
@@ -82,10 +75,31 @@ function onEvent(eventName, value1, value2, strumTime)
 			runTimer('freaksAnimLength', getProperty('girlfreaksEvil.animation.curAnim.numFrames') / 24)
 		end
 	end
+	if eventName == 'Change Character' then
+		trailSetup()
+	end
 end
 
 function onTimerCompleted(tag, loops, loopsLeft)
 	if tag == 'freaksAnimLength' then
 		setProperty('girlfreaksEvil.visible', false)
 	end
+end
+
+function trailSetup()
+	runHaxeCode([[
+		import flixel.math.FlxAngle;
+		import flixel.addons.effects.FlxTrail;
+
+		if (game.dadTrail != null) {
+			game.dadTrail.destroy(); // Cleanly destroy the old trail
+			game.remove(game.dadTrail); // Optional: also remove from scene graph
+			game.dadTrail = null;
+		}
+
+		// Add new trail
+		var newTrail:FlxTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069);
+		game.dadTrail = newTrail;
+		insert(members.indexOf(game.dadGroup), game.dadTrail);
+	]])
 end

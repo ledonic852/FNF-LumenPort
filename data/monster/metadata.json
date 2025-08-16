@@ -4,7 +4,6 @@
 	"freeplayCharacter": "bf",
 	"freeplaySongLength": 177,
 	"freeplayPrevEnd": 16,
-	"altInstrumentalSongs": "",
-	"allowErectVariants": false,
+	"altInstrumentalSongs": "", 
 	"freeplayPrevStart": 0
 }
