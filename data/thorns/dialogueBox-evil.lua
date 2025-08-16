@@ -222,7 +222,7 @@ end
 function dialogueSkip()
     if getProperty('dialogueText.paused') == false then
         if dialogueData.pausePos[1] ~= nil then
-            setProperty('dialogueText._length', dialogueData.pausePos[1] - 1)
+            setProperty('dialogueText._length', dialogueData.pausePos[1])
             setProperty('dialogueText.paused', true)
             table.remove(dialogueData.pausePos, 1)
         else
