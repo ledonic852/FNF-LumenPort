@@ -220,7 +220,7 @@
 			"mustHitSection": false
 		}
 	],
-	"gfVersion": "gf",
+	"gfVersion": "",
 	"format": "psych_v1_convert",
 	"bpm": 100,
 	"needsVoices": true,
