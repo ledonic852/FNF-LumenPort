@@ -28,7 +28,7 @@
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/gfTankmen",
-	"position": [0, 0],
+	"position": [155, 0],
 	"healthicon": "gf",
 	"flip_x": false,
 	"healthbar_colors": [165, 0, 77],

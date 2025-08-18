@@ -76,7 +76,7 @@
 	"vocals_file": "",
 	"no_antialiasing": false,
 	"image": "characters/picoSpeaker",
-	"position": [300, -95],
+	"position": [150, -125],
 	"healthicon": "pico",
 	"flip_x": false,
 	"healthbar_colors": [183, 216, 85],

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="tankman-body.png" width="568" height="517">
+  <SubTexture name="tankmanBody0001" x="7" y="268" width="276" height="241" frameX="-0" frameY="-9" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0002" x="7" y="268" width="276" height="241" frameX="-0" frameY="-9" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0003" x="287" y="7" width="273" height="243" frameX="-0" frameY="-5" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0004" x="287" y="7" width="273" height="243" frameX="-0" frameY="-5" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0005" x="7" y="7" width="266" height="247" frameX="-5" frameY="-1" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0006" x="7" y="7" width="266" height="247" frameX="-5" frameY="-1" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0007" x="297" y="264" width="264" height="246" frameX="-5" frameY="-0" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0008" x="297" y="264" width="264" height="246" frameX="-5" frameY="-0" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0009" x="297" y="264" width="264" height="246" frameX="-5" frameY="-0" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0010" x="297" y="264" width="264" height="246" frameX="-5" frameY="-0" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0011" x="297" y="264" width="264" height="246" frameX="-5" frameY="-0" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0012" x="297" y="264" width="264" height="246" frameX="-5" frameY="-0" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0013" x="297" y="264" width="264" height="246" frameX="-5" frameY="-0" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0014" x="297" y="264" width="264" height="246" frameX="-5" frameY="-0" frameWidth="276" frameHeight="250" />
+  <SubTexture name="tankmanBody0015" x="297" y="264" width="264" height="246" frameX="-5" frameY="-0" frameWidth="276" frameHeight="250" />
+</TextureAtlas>
