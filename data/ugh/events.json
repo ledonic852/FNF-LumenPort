@@ -1,0 +1,162 @@
+{
+	"events": [
+		[
+			0,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			6000,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			9375,
+			[
+				["Add Camera Zoom", "", ""]
+			]
+		],
+		[
+			9750,
+			[
+				["Add Camera Zoom", "", ""]
+			]
+		],
+		[
+			10125,
+			[
+				["Add Camera Zoom", "", ""]
+			]
+		],
+		[
+			10687.5,
+			[
+				["Add Camera Zoom", "", ""]
+			]
+		],
+		[
+			10875,
+			[
+				["Add Camera Zoom", "", ""]
+			]
+		],
+		[
+			11062.5,
+			[
+				["Add Camera Zoom", "", ""]
+			]
+		],
+		[
+			11250,
+			[
+				["Add Camera Zoom", "0.03", "0.06"]
+			]
+		],
+		[
+			11437.5,
+			[
+				["Add Camera Zoom", "0.03", "0.06"]
+			]
+		],
+		[
+			11625,
+			[
+				["Add Camera Zoom", "0.06", "0.12"]
+			]
+		],
+		[
+			11812.5,
+			[
+				["Add Camera Zoom", "0.06", "0.12"]
+			]
+		],
+		[
+			12000,
+			[
+				["Set Camera Target", "Dad", ""],
+				["Add Camera Zoom", "", ""]
+			]
+		],
+		[
+			18000,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			24000,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			27000,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			30000,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			33000,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			36000,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			42000,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			48000,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			54000,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			60000,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			66000,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			72000,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			78000,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		]
+	],
+	"format": "psych_v1"
+}

@@ -58,7 +58,7 @@
 				[4875, 5, 0],
 				[5062, 4, 0],
 				[5250, 7, 281],
-				[5625, 6, 0, "ugh"]
+				[5625, 6, 0, "Alt Animation"]
 			],
 			"sectionBeats": 4,
 			"mustHitSection": false
@@ -443,7 +443,7 @@
 				[40875, 6, 0],
 				[41062, 7, 0],
 				[41250, 4, 281],
-				[41625, 6, 0, "ugh"]
+				[41625, 6, 0, "Alt Animation"]
 			],
 			"sectionBeats": 4,
 			"mustHitSection": false
@@ -515,7 +515,7 @@
 				[48750, 5, 0],
 				[48843, 6, 0],
 				[48937, 7, 0],
-				[49125, 6, 0, "ugh"]
+				[49125, 6, 0, "Alt Animation"]
 			],
 			"sectionBeats": 4,
 			"mustHitSection": false
@@ -809,7 +809,7 @@
 				[76875, 6, 0],
 				[77062, 7, 0],
 				[77250, 4, 281],
-				[77625, 6, 0, "ugh"]
+				[77625, 6, 0, "Alt Animation"]
 			],
 			"sectionBeats": 4,
 			"mustHitSection": false

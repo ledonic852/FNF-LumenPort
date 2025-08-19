@@ -1,0 +1,150 @@
+{
+	"events": [
+		[
+			0,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			5393.25842696629,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			11123.595505618,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			14831.4606741573,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			21573.0337078652,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			24269.6629213483,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			26966.2921348315,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			28314.606741573,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			31011.2359550562,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			37752.808988764,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			43146.0674157303,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			48539.3258426966,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			53932.5842696629,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			59325.8426966292,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			62022.4719101124,
+			[
+				["Set Camera Target", "Dad", ""],
+				["Set Property", "dad.specialAnim", "true"]
+			]
+		],
+		[
+			67415.7303370787,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			75505.6179775281,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			80898.8764044945,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			86292.1348314608,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			91685.3932584271,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			97078.6516853934,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			102471.91011236,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		],
+		[
+			107865.168539326,
+			[
+				["Set Camera Target", "Dad", ""]
+			]
+		],
+		[
+			113258.426966292,
+			[
+				["Set Camera Target", "BF", ""]
+			]
+		]
+	],
+	"format": "psych_v1"
+}
