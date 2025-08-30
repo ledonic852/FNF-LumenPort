@@ -14,6 +14,10 @@ function onCreate()
 
     tankAngle = getRandomInt(-90, 45)
     tankSpeed = getRandomFloat(5, 7)
+
+    for i = 1, 25 do
+		precacheSound('jeffGameover/jeffGameover-'..i)
+	end
 end
 
 function onUpdate(elapsed)
@@ -35,4 +39,23 @@ function onBeatHit()
             playAnim('watchtower', 'idle', true)
         end
     end
+end
+
+-- Everything from this point is for the death voiceline behavior
+function onGameOverLoop()
+    local jeffVariant = getRandomInt(1, 25)
+	playSound('jeffGameover/jeffGameover-'..jeffVariant, 1, 'jeffVoiceline')
+    setSoundVolume(nil, 0.2)
+end
+
+-- Little something to prevent the Game Over music to restart when you retry
+local gameOverFinished = false
+function onGameOverConfirm()
+	gameOverFinished = true
+end
+
+function onSoundFinished(tag)
+	if tag == 'jeffVoiceline' and gameOverFinished == false then
+		soundFadeIn(nil, 4, 0.2, 1)
+	end
 end
