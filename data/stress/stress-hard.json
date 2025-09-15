@@ -1453,6 +1453,7 @@
 		}
 	],
 	"gfVersion": "pico-speaker",
+	"gameOverChar": "bf-holding-gf-dead",
 	"format": "psych_v1_convert",
 	"bpm": 178,
 	"needsVoices": true,
