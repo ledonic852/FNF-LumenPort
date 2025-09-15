@@ -10,6 +10,12 @@ var funnyScroll2:BGScrollingText;
 var moreWays2:BGScrollingText;
 var funnyScroll3:BGScrollingText;
 
+var glow:FlxSprite;
+var glowDark:FlxSprite;
+
+var beatFreq:Int = 1;
+var beatFreqList:Array<Int> = [1, 2, 4, 8];
+
 function onCreate() {
 	funnyScroll = new BGScrollingText(0, 220, djText1, FlxG.width / 2, false, 60);
 	funnyScroll2 = new BGScrollingText(0, 335, djText1, FlxG.width / 2, false, 60);
@@ -57,6 +63,33 @@ function init() {
 	funnyScroll3.speed = -3.8;
 	funnyScroll3.cameras = [FlxG.state.subState.funnyCam];
 	add(funnyScroll3);
+
+	// Glow sprites
+	glowDark = new FlxSprite(-300, 330).loadGraphic(Paths.image('freeplay/beatglow'));
+	glowDark.blend = 9;
+	glowDark.cameras = [FlxG.state.subState.funnyCam];
+	add(glowDark);
+
+	glow = new FlxSprite(-300, 330).loadGraphic(Paths.image('freeplay/beatglow'));
+	glow.blend = 0;
+	glow.cameras = [FlxG.state.subState.funnyCam];
+	add(glow);
+
+	glowDark.visible = false;
+	glow.visible = false;
+}
+
+function beatHit(curBeat) {
+	beatFreq = beatFreqList[Math.floor(FreeplayHelpers.BPM / 140)];
+	if (curBeat % beatFreq != 0) return;
+
+	FlxTween.cancelTweensOf(glow);
+	FlxTween.cancelTweensOf(glowDark);
+
+	glow.alpha = 0.8;
+	FlxTween.tween(glow, {alpha: 0}, 16 / 24, {ease: FlxEase.quartOut});
+	glowDark.alpha = 0;
+	FlxTween.tween(glowDark, {alpha: 0.6}, 18 / 24, {ease: FlxEase.quartOut});
 }
 
 function introDone() {
@@ -77,6 +110,8 @@ function showSprites(show:Bool) {
 	funnyScroll2.visible = show;
 	moreWays2.visible = show;
 	funnyScroll3.visible = show;
+	glowDark.visible = show;
+	glow.visible = show;
 }
 
 function applyExitMovers(exitMovers, exitMoversCharSel) {
@@ -124,14 +159,10 @@ function applyExitMovers(exitMovers, exitMoversCharSel) {
 }
 
 function enterCharSel() {
-	charSelTween(moreWays);
-	charSelTween(funnyScroll);
-	charSelTween(txtNuts);
-	charSelTween(funnyScroll2);
-	charSelTween(moreWays2);
-	charSelTween(funnyScroll3);
-}
-
-function charSelTween(object) {
-	FlxTween.tween(object, {speed: 0}, 0.8, {ease: FlxEase.sineIn});
+	FlxTween.tween(funnyScroll, {speed: 0}, 0.8, {ease: FlxEase.sineIn});
+	FlxTween.tween(funnyScroll2, {speed: 0}, 0.8, {ease: FlxEase.sineIn});
+	FlxTween.tween(moreWays, {speed: 0}, 0.8, {ease: FlxEase.sineIn});
+	FlxTween.tween(moreWays2, {speed: 0}, 0.8, {ease: FlxEase.sineIn});
+	FlxTween.tween(txtNuts, {speed: 0}, 0.8, {ease: FlxEase.sineIn});
+	FlxTween.tween(funnyScroll3, {speed: 0}, 0.8, {ease: FlxEase.sineIn});
 }
