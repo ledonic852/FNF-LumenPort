@@ -1,0 +1,77 @@
+{
+	"events": [
+		[
+			8901.0989010989,
+			[
+				["ZoomCamera", "elasticInOut", "4"]
+			]
+		],
+		[
+			10549.4505494506,
+			[
+				["ZoomCamera", "quadInOut", "12"]
+			]
+		],
+		[
+			40549.0989010989,
+			[
+				["ZoomCamera", "4", "elasticInOut"]
+			]
+		],
+		[
+			42197.8021978022,
+			[
+				["ZoomCamera", "quadInOut", "12"]
+			]
+		],
+		[
+			51098.0989010989,
+			[
+				["ZoomCamera", "4", "elasticInOut"]
+			]
+		],
+		[
+			52747.2527472528,
+			[
+				["ZoomCamera", "12", "quadInOut"]
+			]
+		],
+		[
+			80109.8901098901,
+			[
+				["ZoomCamera", "4", "elasticInOut"]
+			]
+		],
+		[
+			81758.2417582418,
+			[
+				["ZoomCamera", "quadInOut", "12"]
+			]
+		],
+		[
+			85384.0989010989,
+			[
+				["ZoomCamera", "4", "elasticInOut"]
+			]
+		],
+		[
+			87032.967032967,
+			[
+				["ZoomCamera", "quadInOut", "12"]
+			]
+		],
+		[
+			117032.098901099,
+			[
+				["ZoomCamera", "4", "elasticInOut"]
+			]
+		],
+		[
+			118681.450549451,
+			[
+				["ZoomCamera", "INSTANT", "0.77"]
+			]
+		]
+	],
+	"format": "psych_v1_convert"
+}
