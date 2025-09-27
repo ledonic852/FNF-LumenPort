@@ -1,0 +1,35 @@
+{
+	"songs": [
+		[
+			"Darnell",
+			"darnell",
+			[95, 64, 166]
+		],
+		[
+			"Lit Up",
+			"darnell",
+			[95, 64, 166]
+		],
+		[
+			"2Hot",
+			"darnell",
+			[95, 64, 166]
+		],
+		[
+			"Blazin'",
+			"darnell",
+			[95, 64, 166]
+		]
+	],
+	"colors": ["413CAE", "28256A"],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "weekend1",
+	"difficulties": "Easy,Normal,Hard",
+	"weekCharacters": ["darnell", "pico-playable", "nene"],
+	"storyName": "Due Debts",
+	"weekName": "WeekEnd 1",
+	"hideStoryMode": false,
+	"weekBefore": "week7",
+	"startUnlocked": true
+}
