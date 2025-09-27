@@ -3,7 +3,7 @@
 	"charter": "fabs",
 	"artist": "Kawai Sprite",
 	"speed": 2.4,
-	"stage": "phillyStreets",
+	"stage": "streets",
 	"player1": "pico-playable",
 	"player2": "darnell",
 	"events": [],
